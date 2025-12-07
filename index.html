@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Contacto</title>
+  <link rel="stylesheet" href="proyecto.css">
+</head>
+<body>
+
+  <div class="contact-form">
+    <h2>Contáctanos</h2>
+    <!-- Aquí insertamos el endpoint de Formspree en el atributo 'action' -->
+    <form action="https://formspree.io/f/xwpgqwgd" method="POST">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <button type="submit">Enviar</button>
+      <button type="reset" class="reset-btn">Restablecer</button>
+    </form>
+
+    <div class="form-footer">
+      <p>Nos pondremos en contacto contigo pronto.</p>
+    </div>
+  </div>
+
+</body>
+</html>
